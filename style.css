@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@700&family=Space+Mono:wght@400;700&display=swap');
+
+:root {
+    --ff-primary: 'Space Mono', monospace;
+    --ff-header: 'Inconsolata', monospace;
+    --ff-footer: 'Montserrat', sans-serif;
+
+    --primary-color: #333333;
+    --secondary-color: #4F4F4F; 
+    --footer-color: #BDBDBD;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--ff-primary);
+}
+
+a {
+    text-decoration: none;
+}
+
+.primary-color {
+    color: var(--primary-color);
+}
+
+.font-weight-700 {
+    font-weight: 700;
+}
+
+img {
+    display: bloc;
+    width: min(100%, 37.5rem);
+}
+
+.top-left-message {
+    margin: 1em;
+    font-size: 1.5rem;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 1.5;
+    padding: .3em 0;
+}
+
+p {
+    font-size: 1.125rem;
+    color: var(--secondary-color);
+    width: 90%;
+    font-weight: 400;
+    line-height: 2.188;
+    padding-bottom: 4em;
+}
+
+
+.back-homepage-btn {
+    padding: 1.3em;
+    color: #fff;
+    background-color: var(--primary-color); /*14,4*/
+}
+
+article,
+footer {
+    padding: 3rem 0;
+}
+
+.container {
+    margin-inline: auto;
+    width: min(95%, 80rem);
+}
+
+.split {
+    display: flex;
+    flex-direction: column;
+}
+
+.split > * + * {
+    margin-top: 2rem;
+}
+
+footer {
+    text-align: center;
+    font-family: var(--ff-footer);
+    font-size: 0.8rem;
+}
+
+.footer-color {
+    color: var(--footer-color);
+}
+
