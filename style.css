@@ -33,7 +33,7 @@ a {
 }
 
 img {
-    display: bloc;
+    display: block;
     width: min(100%, 37.5rem);
 }
 
@@ -61,7 +61,7 @@ p {
 .back-homepage-btn {
     padding: 1.3em;
     color: #fff;
-    background-color: var(--primary-color); /*14,4*/
+    background-color: var(--primary-color); 
 }
 
 article,
@@ -91,5 +91,20 @@ footer {
 
 .footer-color {
     color: var(--footer-color);
+}
+
+@media (min-width:50em) {
+    .split {
+        flex-direction: row;
+    }
+    .split > * {
+        flex-basis: 100%;
+    }
+    .split > * + * {
+        margin-left: 10rem;
+    }
+    p {
+        width: 60%;
+    }
 }
 
